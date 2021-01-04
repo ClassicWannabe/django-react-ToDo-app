@@ -131,7 +131,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://django-react-todo-application.herokuapp.com/'
+    'https://django-react-todo-application.herokuapp.com'
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
