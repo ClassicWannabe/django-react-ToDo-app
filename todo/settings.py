@@ -25,7 +25,7 @@ SECRET_KEY = 'e_()4m!^xwmjmgb4wp%u66_6algk6ul=k_*uctlv_%cblz_ctp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://django-react-todo-application.herokuapp.com/']
+ALLOWED_HOSTS = ['https://django-react-todo-application.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -125,13 +125,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'frontend/build/static',
-# ]
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [
+    BASE_DIR / 'build/static',
+]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://django-react-todo-application.herokuapp.com'
+    'https://django-react-todo-application.herokuapp.com',
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
