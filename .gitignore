@@ -12,8 +12,6 @@ __pycache__/
 env/
 develop-eggs/
 dist/
-build/
-frontend/
 downloads/
 eggs/
 .eggs/
@@ -112,6 +110,30 @@ media/
 # Ignore Django Migrations in Development if you are working on team
 
 # Only for Development only
-# **/migrations/**
-# !**/migrations
-# !**/migrations/__init__.py
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+
+
+# React .gitignore
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
